@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="torqueSilver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#C7CBD1" />
+      <stop offset="100%" stop-color="#7B8089" />
+    </linearGradient>
+    <linearGradient id="torqueRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D5E" />
+      <stop offset="100%" stop-color="#E63946" />
+    </linearGradient>
+  </defs>
+  <!-- Background Disc -->
+  <rect width="64" height="64" rx="14" fill="#101114" />
+  <!-- Outer Wheel/Torque Rim -->
+  <circle cx="32" cy="32" r="24" stroke="url(#torqueSilver)" stroke-width="2.5" fill="none" opacity="0.85" />
+  <!-- Inner Segmented Rings -->
+  <circle cx="32" cy="32" r="18" stroke="#191B20" stroke-width="3" fill="none" />
+  <!-- Torque Dynamic Turbine Fins -->
+  <path d="M32 12 A 20 20 0 0 1 52 32" stroke="url(#torqueRed)" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <path d="M32 52 A 20 20 0 0 1 12 32" stroke="url(#torqueSilver)" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <!-- Central Hub / Precision Core -->
+  <circle cx="32" cy="32" r="6" fill="#101114" stroke="url(#torqueSilver)" stroke-width="2" />
+  <circle cx="32" cy="32" r="2.5" fill="url(#torqueRed)" />
+</svg>

@@ -1,0 +1,31 @@
+# Environment variables (credentials and secrets)
+.env
+.env.local
+.env.*.local
+backend/.env
+!.env.example
+!backend/.env.example
+
+# Temporary and runtime logs
+backend/storage/logs/*.log
+backend/storage/logs/*.json
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

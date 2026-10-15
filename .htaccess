@@ -1,0 +1,51 @@
+# ==========================================================
+# The Torque Studio — Production Apache .htaccess (Hostinger / cPanel)
+# ==========================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # 1. Force HTTPS (Uncomment in production once SSL is active)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # 2. Pass Authorization Headers for Bearer Token Authentication
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # 3. Route API endpoints directly to PHP front controller
+    RewriteRule ^api/(.*)$ backend/public/index.php [QSA,L]
+    RewriteRule ^api$ backend/public/index.php [QSA,L]
+
+    # 4. Route uploaded files directly to storage directory
+    RewriteRule ^uploads/(.*)$ backend/storage/uploads/$1 [L]
+
+    # 5. Serve existing physical files and directories directly
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # 6. React Router Fallback: Route all other requests to index.html
+    RewriteRule ^ index.html [L]
+</IfModule>
+
+# ----------------------------------------------------------
+# Security Headers
+# ----------------------------------------------------------
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ----------------------------------------------------------
+# Prevent Access to Sensitive Files and Directories
+# ----------------------------------------------------------
+<FilesMatch "^\.env|\.git|\.lock|composer\.(json|lock)|package\.(json|lock)|tsconfig\.json">
+    Require all denied
+</FilesMatch>
+
+# Prevent directory listings
+Options -Indexes
