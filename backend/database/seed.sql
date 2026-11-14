@@ -25,7 +25,7 @@ INSERT INTO `services` (
 ) VALUES
 -- 1. Paint Protection Film (PPF)
 (
-    1, 1, 'Paint Protection Film (PPF)', 'paint-protection-film-ppf',
+    1, 1, 'Paint Protection Film (PPF)', 'paint-protection-film',
     'High-grade self-healing impact polyurethane film safeguarding paint against stone chips, scratches, and road debris.',
     'Paint Protection Film (PPF) is an elastomeric optical barrier engineered to absorb physical impacts from flying gravel, stone chips, and parking scratches. The top layer features advanced thermal self-healing capabilities, allowing light swirl marks to dissipate under warmth and sunlight while preserving your vehicle factory paint finish.',
     '["Stops physical stone chips and road debris damage", "Thermal self-healing top coat removes light swirl marks", "Preserves original factory OEM paint value", "Hydrophobic stain and chemical resistance"]',
@@ -38,7 +38,7 @@ INSERT INTO `services` (
     '[2, 3, 5]',
     'Paint Protection Film (PPF) | Radiant Detailing Studio',
     'Defend your car with self-healing Paint Protection Film at Radiant Detailing Studio in Kharghar and Vashi.',
-    '/services/paint-protection-film-ppf',
+    '/services/paint-protection-film',
     1, 1, 1
 ),
 
