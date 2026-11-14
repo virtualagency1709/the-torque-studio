@@ -3,7 +3,7 @@
  * Standardized JSON API Response
  */
 
-namespace Torque\Utils;
+namespace Radiant\Utils;
 
 class Response {
     public static function json($data = null, int $statusCode = 200, string $message = ''): void {

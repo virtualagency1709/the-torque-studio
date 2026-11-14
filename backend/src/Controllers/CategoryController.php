@@ -3,10 +3,10 @@
  * Service Category Controller
  */
 
-namespace Torque\Controllers;
+namespace Radiant\Controllers;
 
-use Torque\Database\Database;
-use Torque\Utils\Response;
+use Radiant\Database\Database;
+use Radiant\Utils\Response;
 
 class CategoryController {
     public function index(): void {

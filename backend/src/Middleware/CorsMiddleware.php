@@ -3,7 +3,7 @@
  * Cross-Origin Resource Sharing (CORS) Middleware
  */
 
-namespace Torque\Middleware;
+namespace Radiant\Middleware;
 
 class CorsMiddleware {
     public static function handle(): void {

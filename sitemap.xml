@@ -2,87 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Website Pages -->
   <url>
-    <loc>https://thetorquestudio.in/</loc>
+    <loc>https://radiantdetailingstudio.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://thetorquestudio.in/about</loc>
+    <loc>https://radiantdetailingstudio.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thetorquestudio.in/services</loc>
+    <loc>https://radiantdetailingstudio.com/services</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://thetorquestudio.in/paint-protection</loc>
+    <loc>https://radiantdetailingstudio.com/paint-protection</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://thetorquestudio.in/ceramic-coating</loc>
+    <loc>https://radiantdetailingstudio.com/ceramic-coating</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://thetorquestudio.in/gallery</loc>
+    <loc>https://radiantdetailingstudio.com/gallery</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thetorquestudio.in/reviews</loc>
+    <loc>https://radiantdetailingstudio.com/reviews</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thetorquestudio.in/book</loc>
+    <loc>https://radiantdetailingstudio.com/book</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://thetorquestudio.in/contact</loc>
+    <loc>https://radiantdetailingstudio.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thetorquestudio.in/faqs</loc>
+    <loc>https://radiantdetailingstudio.com/faqs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thetorquestudio.in/privacy-policy</loc>
+    <loc>https://radiantdetailingstudio.com/privacy-policy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://thetorquestudio.in/terms-and-conditions</loc>
+    <loc>https://radiantdetailingstudio.com/terms-and-conditions</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
-  <!-- All 22 Detailing Services -->
-  <url><loc>https://thetorquestudio.in/services/polishing</loc><priority>0.8</priority></url>
-  <url><loc>https://thetorquestudio.in/services/car-window-cleaning</loc><priority>0.7</priority></url>
-  <url><loc>https://thetorquestudio.in/services/pressure-car-washing</loc><priority>0.8</priority></url>
-  <url><loc>https://thetorquestudio.in/services/car-waxing</loc><priority>0.7</priority></url>
-  <url><loc>https://thetorquestudio.in/services/car-polishing</loc><priority>0.8</priority></url>
-  <url><loc>https://thetorquestudio.in/services/clay-bar-treatment</loc><priority>0.7</priority></url>
-  <url><loc>https://thetorquestudio.in/services/interior-cleaning</loc><priority>0.8</priority></url>
-  <url><loc>https://thetorquestudio.in/services/vehicle-interior-vacuuming</loc><priority>0.7</priority></url>
-  <url><loc>https://thetorquestudio.in/services/vehicle-upholstery-cleaning</loc><priority>0.7</priority></url>
-  <url><loc>https://thetorquestudio.in/services/leather-and-suede-cleaning</loc><priority>0.8</priority></url>
-  <url><loc>https://thetorquestudio.in/services/vehicle-delivery</loc><priority>0.6</priority></url>
-  <url><loc>https://thetorquestudio.in/services/dry-cleaning</loc><priority>0.7</priority></url>
-  <url><loc>https://thetorquestudio.in/services/rim-and-wheel-cleaning</loc><priority>0.7</priority></url>
-  <url><loc>https://thetorquestudio.in/services/auto-detailing</loc><priority>0.9</priority></url>
-  <url><loc>https://thetorquestudio.in/services/vacuuming</loc><priority>0.6</priority></url>
-  <url><loc>https://thetorquestudio.in/services/car-washing</loc><priority>0.8</priority></url>
-  <url><loc>https://thetorquestudio.in/services/ceramic-coating</loc><priority>0.9</priority></url>
-  <url><loc>https://thetorquestudio.in/services/graphene-coating</loc><priority>0.9</priority></url>
-  <url><loc>https://thetorquestudio.in/services/paint-protection-film-ppf</loc><priority>0.9</priority></url>
-  <url><loc>https://thetorquestudio.in/services/photochromic-film</loc><priority>0.8</priority></url>
-  <url><loc>https://thetorquestudio.in/services/pickup-and-dropoff-service</loc><priority>0.7</priority></url>
-  <url><loc>https://thetorquestudio.in/services/rubbing-and-polishing</loc><priority>0.8</priority></url>
+  <!-- Radiant Detailing Studio Services -->
+  <url><loc>https://radiantdetailingstudio.com/services/paint-protection-film-ppf</loc><priority>0.9</priority></url>
+  <url><loc>https://radiantdetailingstudio.com/services/ceramic-coating</loc><priority>0.9</priority></url>
+  <url><loc>https://radiantdetailingstudio.com/services/graphene-coating</loc><priority>0.9</priority></url>
+  <url><loc>https://radiantdetailingstudio.com/services/sun-films</loc><priority>0.8</priority></url>
+  <url><loc>https://radiantdetailingstudio.com/services/car-polishing</loc><priority>0.8</priority></url>
+  <url><loc>https://radiantdetailingstudio.com/services/professional-car-wash</loc><priority>0.8</priority></url>
 </urlset>

@@ -3,9 +3,9 @@
  * Rate Limiter to prevent brute-force attacks and enquiry spam
  */
 
-namespace Torque\Middleware;
+namespace Radiant\Middleware;
 
-use Torque\Utils\Response;
+use Radiant\Utils\Response;
 
 class RateLimiter {
     public static function check(string $actionKey, int $maxAttempts = 5, int $decaySeconds = 300): void {

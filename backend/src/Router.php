@@ -3,9 +3,9 @@
  * RESTful Route Dispatcher
  */
 
-namespace Torque;
+namespace Radiant;
 
-use Torque\Utils\Response;
+use Radiant\Utils\Response;
 
 class Router {
     private array $routes = [];

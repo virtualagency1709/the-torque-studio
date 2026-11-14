@@ -3,7 +3,7 @@
  * SMTP Mailer Service for Enquiry Notifications
  */
 
-namespace Torque\Services;
+namespace Radiant\Services;
 
 class MailerService {
     public static function sendEnquiryNotification(array $enquiry): bool {
@@ -16,7 +16,7 @@ class MailerService {
         $bodyHtml = "
         <div style='font-family: Arial, sans-serif; background-color: #101114; color: #F5F5F5; padding: 24px; border-radius: 8px;'>
             <h2 style='color: #E63946; margin-top: 0;'>New Detailing Booking Request</h2>
-            <p style='color: #C7CBD1;'>A customer has submitted a new service enquiry through The Torque Studio website.</p>
+            <p style='color: #C7CBD1;'>A customer has submitted a new service enquiry through Radiant Detailing Studio website.</p>
             
             <table style='width: 100%; border-collapse: collapse; margin-top: 16px; color: #F5F5F5;'>
                 <tr style='border-bottom: 1px solid #22252B;'>
@@ -54,7 +54,7 @@ class MailerService {
             </table>
 
             <div style='margin-top: 24px; text-align: center; font-size: 12px; color: #7B8089;'>
-                The Torque Studio · K-6, New Mahavir Nagar, Tilak Nagar, New Delhi 110018 · 081303 29288
+                Radiant Detailing Studio · Kharghar: +91 8591948464 · Vashi: +91 7021003015
             </div>
         </div>
         ";

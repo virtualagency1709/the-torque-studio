@@ -3,13 +3,13 @@
  * Enquiry Controller — Appointment booking requests and customer inquiries
  */
 
-namespace Torque\Controllers;
+namespace Radiant\Controllers;
 
-use Torque\Database\Database;
-use Torque\Middleware\RateLimiter;
-use Torque\Services\MailerService;
-use Torque\Utils\Response;
-use Torque\Utils\Validator;
+use Radiant\Database\Database;
+use Radiant\Middleware\RateLimiter;
+use Radiant\Services\MailerService;
+use Radiant\Utils\Response;
+use Radiant\Utils\Validator;
 
 class EnquiryController {
     public function store(): void {

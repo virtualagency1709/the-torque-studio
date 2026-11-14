@@ -3,11 +3,11 @@
  * Service Controller — Manages all 22 detailing services
  */
 
-namespace Torque\Controllers;
+namespace Radiant\Controllers;
 
-use Torque\Database\Database;
-use Torque\Utils\Response;
-use Torque\Utils\Validator;
+use Radiant\Database\Database;
+use Radiant\Utils\Response;
+use Radiant\Utils\Validator;
 
 class ServiceController {
     public function index(): void {
@@ -167,7 +167,7 @@ class ServiceController {
             ':featured_image' => $data['featured_image'] ?? '/assets/services/ceramic-coating.jpg',
             ':gallery_images' => isset($data['gallery_images']) ? json_encode($data['gallery_images']) : '[]',
             ':faqs' => isset($data['faqs']) ? json_encode($data['faqs']) : '[]',
-            ':meta_title' => $data['meta_title'] ?? ($data['name'] . ' | The Torque Studio'),
+            ':meta_title' => $data['meta_title'] ?? ($data['name'] . ' | Radiant Detailing Studio'),
             ':meta_description' => $data['meta_description'] ?? $data['short_description'],
             ':is_featured' => !empty($data['is_featured']) ? 1 : 0,
             ':is_published' => isset($data['is_published']) ? (int)$data['is_published'] : 1,

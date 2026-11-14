@@ -1,6 +1,6 @@
 <?php
 /**
- * The Torque Studio — REST API Front Controller
+ * Radiant Detailing Studio — REST API Front Controller
  */
 
 // Error handling & logging
@@ -13,9 +13,9 @@ if (!is_dir($logDir)) {
 ini_set('error_log', $logDir . '/php_error.log');
 error_reporting(E_ALL);
 
-// Autoloader for Torque namespace
+// Autoloader for Radiant namespace
 spl_autoload_register(function ($class) {
-    $prefix = 'Torque\\';
+    $prefix = 'Radiant\\';
     $baseDir = __DIR__ . '/../src/';
 
     $len = strlen($prefix);
@@ -37,19 +37,19 @@ spl_autoload_register(function ($class) {
     }
 });
 
-use Torque\Router;
-use Torque\Middleware\CorsMiddleware;
-use Torque\Middleware\AuthMiddleware;
-use Torque\Utils\Response;
-use Torque\Services\UploadService;
-use Torque\Database\Database;
-use Torque\Controllers\ServiceController;
-use Torque\Controllers\CategoryController;
-use Torque\Controllers\EnquiryController;
-use Torque\Controllers\GalleryController;
-use Torque\Controllers\FaqController;
-use Torque\Controllers\SettingsController;
-use Torque\Controllers\AdminAuthController;
+use Radiant\Router;
+use Radiant\Middleware\CorsMiddleware;
+use Radiant\Middleware\AuthMiddleware;
+use Radiant\Utils\Response;
+use Radiant\Services\UploadService;
+use Radiant\Database\Database;
+use Radiant\Controllers\ServiceController;
+use Radiant\Controllers\CategoryController;
+use Radiant\Controllers\EnquiryController;
+use Radiant\Controllers\GalleryController;
+use Radiant\Controllers\FaqController;
+use Radiant\Controllers\SettingsController;
+use Radiant\Controllers\AdminAuthController;
 
 // Handle CORS
 CorsMiddleware::handle();
@@ -71,7 +71,7 @@ $router->get('/api/health', function() {
     Response::json([
         'status' => 'healthy',
         'database' => $dbOk,
-        'app' => 'The Torque Studio API',
+        'app' => 'Radiant Detailing Studio API',
         'version' => '1.0.0',
         'timestamp' => date('c')
     ]);

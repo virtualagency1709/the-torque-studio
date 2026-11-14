@@ -3,7 +3,7 @@
  * Server-Side Input Validator & Sanitizer
  */
 
-namespace Torque\Utils;
+namespace Radiant\Utils;
 
 class Validator {
     private array $data;

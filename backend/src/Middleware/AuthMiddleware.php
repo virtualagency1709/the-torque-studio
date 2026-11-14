@@ -3,9 +3,9 @@
  * Admin Authentication Middleware
  */
 
-namespace Torque\Middleware;
+namespace Radiant\Middleware;
 
-use Torque\Utils\Response;
+use Radiant\Utils\Response;
 
 class AuthMiddleware {
     public static function check(): array {

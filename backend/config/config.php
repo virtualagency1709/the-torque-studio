@@ -1,6 +1,6 @@
 <?php
 /**
- * The Torque Studio — Backend Configuration
+ * Radiant Detailing Studio — Backend Configuration
  */
 
 // Load .env file if present
@@ -21,15 +21,15 @@ if (file_exists($envFile)) {
 }
 
 return [
-    'app_name' => 'The Torque Studio API',
+    'app_name' => 'Radiant Detailing Studio API',
     'app_env' => getenv('APP_ENV') ?: 'production',
     'app_url' => getenv('APP_URL') ?: 'http://localhost:8000',
     
-    // Database credentials (default for XAMPP / local development)
+    // Database credentials
     'db' => [
         'host' => getenv('DB_HOST') ?: 'localhost',
         'port' => getenv('DB_PORT') ?: '3306',
-        'dbname' => getenv('DB_NAME') ?: 'the_torque_studio',
+        'dbname' => getenv('DB_NAME') ?: 'radiant_detailing_studio',
         'username' => getenv('DB_USER') ?: 'root',
         'password' => getenv('DB_PASS') !== false ? getenv('DB_PASS') : '',
         'charset' => 'utf8mb4'
@@ -38,8 +38,8 @@ return [
     // Security & Auth
     'security' => [
         'session_lifetime' => 86400, // 24 hours
-        'session_cookie_name' => 'torque_admin_sess',
-        'admin_secret' => getenv('APP_SECRET') ?: 'Torque_Studio_Secure_Salt_2026_Delhi',
+        'session_cookie_name' => 'radiant_admin_sess',
+        'admin_secret' => getenv('APP_SECRET') ?: 'Radiant_Auto_Detailing_Secure_Salt_2026',
     ],
 
     // SMTP Mailer settings
@@ -49,9 +49,9 @@ return [
         'smtp_user' => getenv('SMTP_USER') ?: '',
         'smtp_pass' => getenv('SMTP_PASS') ?: '',
         'smtp_secure' => getenv('SMTP_SECURE') ?: 'tls',
-        'from_address' => getenv('MAIL_FROM') ?: 'enquiries@thetorquestudio.in',
-        'from_name' => 'The Torque Studio Detailing',
-        'notification_recipient' => getenv('NOTIFICATION_EMAIL') ?: 'info@thetorquestudio.in',
+        'from_address' => getenv('MAIL_FROM') ?: '',
+        'from_name' => 'Radiant Detailing Studio',
+        'notification_recipient' => getenv('NOTIFICATION_EMAIL') ?: '',
     ],
 
     // Uploads

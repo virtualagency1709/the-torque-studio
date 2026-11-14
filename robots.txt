@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/admin/
 
-Sitemap: https://thetorquestudio.in/sitemap.xml
+Sitemap: https://radiantdetailingstudio.com/sitemap.xml

@@ -3,13 +3,13 @@
  * Admin Authentication Controller
  */
 
-namespace Torque\Controllers;
+namespace Radiant\Controllers;
 
-use Torque\Database\Database;
-use Torque\Middleware\AuthMiddleware;
-use Torque\Middleware\RateLimiter;
-use Torque\Utils\Response;
-use Torque\Utils\Validator;
+use Radiant\Database\Database;
+use Radiant\Middleware\AuthMiddleware;
+use Radiant\Middleware\RateLimiter;
+use Radiant\Utils\Response;
+use Radiant\Utils\Validator;
 
 class AdminAuthController {
     public function login(): void {
@@ -40,7 +40,7 @@ class AdminAuthController {
             $initStmt = $pdo->prepare("INSERT INTO admins (username, email, password_hash) VALUES (:u, :e, :p)");
             $initStmt->execute([
                 ':u' => $userIdentifier,
-                ':e' => strpos($userIdentifier, '@') !== false ? $userIdentifier : 'admin@thetorquestudio.in',
+                ':e' => strpos($userIdentifier, '@') !== false ? $userIdentifier : 'admin@radiantdetailingstudio.com',
                 ':p' => $hash
             ]);
         }

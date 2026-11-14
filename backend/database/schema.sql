@@ -1,11 +1,11 @@
 -- ==========================================================
--- The Torque Studio — Database Schema
--- Location: K-6, New Mahavir Nagar, Tilak Nagar, New Delhi
--- Category: Car Wash / Automotive Detailing
+-- Radiant Detailing Studio — Database Schema
+-- Locations: Kharghar & Vashi, Navi Mumbai
+-- Category: Automotive Detailing & Paint Protection
 -- ==========================================================
 
-CREATE DATABASE IF NOT EXISTS `the_torque_studio` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `the_torque_studio`;
+CREATE DATABASE IF NOT EXISTS `radiant_detailing_studio` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `radiant_detailing_studio`;
 
 -- Disable foreign key checks for clean recreation if needed
 SET FOREIGN_KEY_CHECKS = 0;

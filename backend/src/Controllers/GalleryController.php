@@ -3,11 +3,11 @@
  * Gallery Controller — Showcase items & Before/After comparisons
  */
 
-namespace Torque\Controllers;
+namespace Radiant\Controllers;
 
-use Torque\Database\Database;
-use Torque\Utils\Response;
-use Torque\Utils\Validator;
+use Radiant\Database\Database;
+use Radiant\Utils\Response;
+use Radiant\Utils\Validator;
 
 class GalleryController {
     public function index(): void {

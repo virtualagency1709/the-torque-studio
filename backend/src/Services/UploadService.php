@@ -3,7 +3,7 @@
  * Secure File Upload Service
  */
 
-namespace Torque\Services;
+namespace Radiant\Services;
 
 class UploadService {
     public static function handleUpload(array $file, string $subfolder = 'services'): ?string {

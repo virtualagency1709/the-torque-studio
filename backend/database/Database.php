@@ -1,9 +1,9 @@
 <?php
 /**
- * The Torque Studio — Database Connection Manager (PDO)
+ * Radiant Detailing Studio — Database Connection Manager (PDO)
  */
 
-namespace Torque\Database;
+namespace Radiant\Database;
 
 use PDO;
 use PDOException;
